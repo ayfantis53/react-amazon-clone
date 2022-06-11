@@ -9,3 +9,13 @@ before_install:
 
 script:
   - docker run -e CI=true ayfantis/eshop npm run test
+
+deploy:
+  provider: elasticbeanstalk
+  region: "us-east-1"
+  app: "eshop"
+  env: "Eshop-env"
+  bucket_name: "elasticbeanstalk-us-east-1-583762202529"
+  bucket_path: "eshop"
+  on:
+    branch: master
