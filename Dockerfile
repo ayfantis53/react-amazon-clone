@@ -14,7 +14,7 @@ RUN npm run build
 #-----------------MULTI-BUILD-------------------------#
 #######################################################
 
-FROM nginx
+FROM nginx:latest
 
 EXPOSE 80
 
