@@ -14,7 +14,7 @@ deploy:
   provider: elasticbeanstalk
   region: "us-east-1"
   app: "eshop"
-  env: "Eshop-env-1"
+  env: "Eshop-env"
   bucket_name: "elasticbeanstalk-us-east-1-583762202529"
   bucket_path: "eshop"
   on:
