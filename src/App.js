@@ -1,8 +1,9 @@
 import './App.css';
-import Home from './Home';
-import Login from './Login'
-import Header from './Header';
-import Checkout from './Checkout';
+import Home from './pages/Home';
+import Login from './pages/Login'
+import Checkout from './pages/Checkout';
+import Header from './components/Header';
+import Footer from './components/Footer';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
             </Routes>
 
             <Routes>
-                <Route path="/" element={[<Header />, <Home />]}/>
+                <Route path="/" element={[<Header />, <Home />, <Footer />]}/>
             </Routes>
         </Router>
     </div>

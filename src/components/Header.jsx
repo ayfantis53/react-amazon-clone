@@ -1,10 +1,9 @@
-import React from 'react';
 import './Header.css';
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import StorefrontIcon from '@mui/icons-material/Storefront';
 import SearchIcon from '@mui/icons-material/Search';
 import { Link } from 'react-router-dom';
-import { useStateValue } from './StateProvider';
+import { useStateValue } from '../features/StateProvider';
 
 function Header() {
     const [{basket}, dispatch] = useStateValue();
@@ -26,7 +25,7 @@ function Header() {
             <div className="header__nav">
                 <Link to='/login' style={{ textDecoration: "none" }}>
                     <div className="nav__item">
-                        <span className="nav__itemLineOne">Hello jenn</span>
+                        <span className="nav__itemLineOne">Hello Guest</span>
                         <span className="nav__itemLineTwo">Sign In</span>
                     </div>
                 </Link>

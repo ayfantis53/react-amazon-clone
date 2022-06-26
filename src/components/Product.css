@@ -25,10 +25,26 @@
 
 .product > button {
     background: #ff9f00;
-    border: 1px solid;
-    margin-top: 10px;
     border-color: #a88734 #9c7e31 #846a29;
     color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border-radius: 0;
+    margin-top: 20px;
+    border: 1px solid;
+    transform: none;
+    box-shadow: 3px 4px 0 0 #c7d8ed;
+    transition: background-color .3s,border-color .3s,color .3s;
+}
+
+.product > button:hover{
+    background-color: #131921; 
+    color: white;
+    box-shadow: none;
 }
 
 .product__price {

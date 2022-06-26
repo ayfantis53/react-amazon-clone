@@ -1,6 +1,5 @@
-import React from 'react';
 import "./Product.css";
-import { useStateValue } from './StateProvider';
+import { useStateValue } from '../features/StateProvider';
 
 
 function Product({id, title, price, rating, image}) {
@@ -20,7 +19,7 @@ function Product({id, title, price, rating, image}) {
   };
 
   return (
-    <div className="product" data-testid="Product">
+    <div className="product" key={id}>
         <div className="product__info">
             <p>{title}</p>
 
