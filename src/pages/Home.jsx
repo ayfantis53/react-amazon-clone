@@ -3,7 +3,7 @@ import Product from '../components/Product';
 
 function Home() {
   return (
-    <div className='home' data-testid="Home">
+    <div className='home'>
         <div className="home__container">
             
             <img src="https://www.x-cart.com/wp-content/uploads/2019/01/ecommerce-768x278.jpg" alt="" className='home__image'/>
